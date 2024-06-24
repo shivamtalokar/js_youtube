@@ -14,7 +14,7 @@ let num_score = Number(score)
 let loged = "Shiv"
 let boolLoged = Boolean(loged)
 
-console.log(boolLoged)
+// console.log(boolLoged)
 
 /*
 1 =>true ,0=> false
@@ -23,5 +23,21 @@ console.log(boolLoged)
 */
 let num = 34
 let string_num = String(num)
-console.log(string_num)
-console.log(typeof string_num)
+// console.log(string_num)
+// console.log(typeof string_num)
+
+// ******************************************** OPERATIONS ************************************************************
+
+
+
+let str1 = "Shivam"
+let str2 = " Talokar"
+
+let str3 = str1+str2
+// console.log(str3);
+
+console.log(2+2);  //4
+console.log(2+"2"); //22
+console.log("2"+2);  //22
+console.log("2"+2+3); //223
+console.log(2+1+"4"); //34
