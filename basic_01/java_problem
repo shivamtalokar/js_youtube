@@ -1,0 +1,60 @@
+// rotate array by d place
+class Solution {
+    public static void main(String args[]){
+        int arr[] = {1,2,3,4,5,6,7},k=15;
+       int n=arr.length,temp[] = new int[n];
+       k = k%n;
+        for(int j=0;j<k;j++){
+           temp[j] = arr[j];
+        }
+        for(int i = k;i<n;i++){
+            arr[i-k] = arr[i];
+        }
+        for(int i = 0;i<k;i++){
+        arr[n-k+i] = temp[i];
+             }
+               
+        
+          for(int i = 0;i<n;i++){
+                System.out.println(arr[i])   ;
+                 }
+       
+        
+    }
+}
+
+
+// move all 0 at the end 
+class Solution {
+    public static void main (String args[]) {
+    int[] arr = {1, 2, 0, 3, 0, 1};
+        int n = arr.length;
+       int pointer = 0; int temp;
+       
+       
+        for(int i= 0;i<n;i++){
+           if(arr[i]==0){
+              pointer = i;
+              break;
+           }
+        }
+        
+        
+           for(int i= pointer+1;i<n-1;i++){
+               if(arr[i+1]!=0){
+               temp = arr[pointer];
+               arr[pointer] = arr[i+1];
+               arr[i+1] = temp;
+                 pointer++;
+               }
+            
+           }
+        
+        for(int i= 0;i<n;i++){
+                System.out.println(arr[i]);
+        }
+            
+
+        
+    }
+}
