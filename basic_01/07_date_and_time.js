@@ -1,4 +1,4 @@
-const date = new Date() // date object ahe
+const date = new Date()     // date object ahe
 // console.log(date.toString());
 // console.log(date.toDateString());
 // console.log(date.toLocaleDateString());
