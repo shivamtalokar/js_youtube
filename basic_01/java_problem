@@ -157,3 +157,24 @@ public class UnionOfArrays {
         System.out.println();
     }
 }
+
+// missing no. in array
+class Solution {
+    public int missingNumber(int[] arr) {
+        int flag = 0;
+        int n = arr.length;
+        int sum = 0;
+        int temp =0;
+        for(int i = 0;i<=n;i++){
+            sum = sum +i;
+        }
+        for(int i = 0;i<n;i++){
+            temp = temp + arr[i];
+        }
+        if(sum != temp){
+            flag = sum-temp;
+        }
+        
+        return flag;
+}
+}
