@@ -30,24 +30,43 @@
 
 // Question 4
 
+// let n1 = 6;
+// let n2 = 34;
+// let sum = 0;
+// let arr1 = Array.from(String(n1));
+// let arr2 = Array.from(String(n2));
+// let max_len = Math.max(n1.length,n2.length); 
+// for(let i = 0 ; i< max_len;i++){
+//     if(arr1.length > arr2.length ){
+//         console.log(n2.unshift(0));
+//     }
+//     else {
+//     console.log(n1.unshift(0))
+   
+// }
+
+// sum = sum + (arr1[i]*arr2[i]);
+
+// }
+// console.log(sum);
+
+    
 let n1 = 6;
 let n2 = 34;
 let sum = 0;
-Array.from(String(n1));
-Array.from(String(n2));
-let max_len = Math.max(n1.length,n2.length); 
-for(let i = 0 ; i< max_len;i++){
-    if(n1.length > n2.length ){
-        console.log(n1.unshift(0));
+
+let arr1 = Array.from(String(n1));
+let arr2 = Array.from(String(n2));
+
+let max_len = Math.max(arr1.length, arr2.length);
+
+for (let i = 0; i < max_len; i++) {
+    if (arr1.length > arr2.length) {
+        n2.unshift(0); // Add a leading zero to n2
+    } else {
+        n1.unshift(0); // Add a leading zero to n1
     }
-    else {
-    console.log(n2.unshift(0))
-   
+    sum = sum + (arr1[i] * arr2[i]);
 }
 
-sum = sum + (n1[i]*n2[i]);
-
-}
-console.log(sum);
-
-    
+console.log(sum); // This will print the result: 24
