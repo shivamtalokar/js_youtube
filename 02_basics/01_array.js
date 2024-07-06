@@ -7,13 +7,13 @@ const arr = [0,1,2,3,4];
 // console.log(arr);
 // console.log(arr.join()) // convert value into string
 
-// console.log("A ",arr);
-// console.log(arr.slice(1,3));
-// console.log("B ",arr);
-// console.log(arr.slice(1,3));
-// console.log(arr.splice(1,3));
-// console.log("C ",arr);
-// console.log(arr.splice(1,3));
+console.log("A ",arr);
+console.log(arr.slice(1,3));
+console.log("B ",arr);
+console.log(arr.slice(1,3));
+console.log(arr.splice(1,3));
+console.log("C ",arr);
+console.log(arr.splice(1,3));
 
 
 const arr1 = [1,2,3,4,5];

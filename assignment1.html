@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content: Flower Cards -->
+    <div class="container">
+        <div class="card">
+            <img src="flower1.jpg" alt="Flower 1">
+            <h2>Rose</h2>
+            <p>Roses are beautiful flowers known for their fragrance and beauty.</p>
+        </div>
+
+        <div class="card">
+            <img src="flower2.jpg" alt="Flower 2">
+            <h2>Tulip</h2>
+            <p>Tulips are elegant flowers with vibrant colors, often associated with spring.</p>
+        </div>
+
+        <div class="card">
+            <img src="flower3.jpg" alt="Flower 3">
+            <h2>Lily</h2>
+            <p>Lilies are graceful flowers with large petals and a pleasant fragrance.</p>
+        </div>
+    </div>
+</body>
+</html>
