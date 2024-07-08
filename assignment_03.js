@@ -158,3 +158,47 @@
 
 //Question 11 
 
+
+let arr_of_obj = [
+    {
+        student1: {
+            subject1: 44,
+            subject2: 56,
+            subject3: 87,
+            subject4: 97,
+            subject5: 37
+        }
+    },
+    {
+        student2: {
+            subject1: 44,
+            subject2: 56,
+            subject3: 87,
+            subject4: 97,
+            subject5: 37
+        }
+    },
+    {
+        student3: {
+            subject1: 44,
+            subject2: 56,
+            subject3: 87,
+            subject4: 97,
+            subject5: 37
+        }
+    }
+];
+
+
+let result = arr_of_obj.map(studentObj => {
+    let studentName = Object.keys(studentObj)[0];
+    let marks = Object.values(studentObj[studentName]);
+    let average = scores.reduce((acc, val) => acc + val, 0) / marks.length;
+    return {
+        [studentName]: {
+            average: average
+        }
+    };
+});
+
+console.log(result);
